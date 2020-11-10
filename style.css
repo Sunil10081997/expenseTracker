@@ -1,0 +1,71 @@
+*{
+    margin: 0rem;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: rgb(15, 155, 43);
+    color: rgb(20, 19, 20);
+}
+#totalAmount{
+    background: 'White';
+
+}
+.htitle{
+    display: flex;
+    justify-content: center;
+    color: black;
+
+}
+.content{
+    width: 580px;
+    margin: 0 auto;
+    background-color:#be12209c;
+    padding: 3%;
+    padding-left: 6%;
+}
+.title{
+    text-align: left;
+    margin: 2% 0;
+    font-weight: 100;
+}
+.form-line{
+    display: inline-flex;
+    padding: 5px 0px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float:right;
+    margin-right: 100px;
+}
+button{
+    margin: 14px 25%;
+    height: 50px;
+    line-height: 20px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 200px;
+    background: brown;
+    color: black;
+}
+input, select{
+    width: 130px;
+    margin-left: 10px;
+    cursor: text;
+}
+table{
+    width: 100%;
+}
+thead{
+    background-color: blanchedalmond;
+    line-height: 1rem;
+}
+a{
+    text-decoration: underline;
+    cursor: pointer;
+}

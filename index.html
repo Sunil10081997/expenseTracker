@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Expense Tracker</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+	</head>
+	<body>
+        <header>
+            <h1 class="htitle">Expense tracker</h1> 
+        </header>
+		<section class="content">
+			<!--<h2 class="title">Add the expenses</h2>-->
+			<div class="form">
+				<form id="expense-Form">
+					<div class="form-line left">
+						<label for="type">Category</label>
+						<select id="category">
+							<option value="choose_one">choose one</option>
+							<option>Clothes</option>
+							<option>Grosary</option>
+							<option>Transport</option>
+							<option>Pharamacy</option>
+							<option>Electronics</option>
+							<option>Other</option>
+						</select>
+					</div>
+					<div class="form-line right">
+						<label for="name">Name:</label>
+						<input type="text" id="name" />
+					</div>
+					<div class="form-line left">
+						<label for="date">DateTime:</label>
+						<input type="datetime-local" id="date" />
+					</div>
+					<div class="form-line right">
+						<label for="amount">Amount</label>
+						<input type="number" id="amount" step="0.5" name="amount"/>
+					</div>
+					<button type="submit" class="btnData" id="btnData">Add a expense</button>
+				</form>
+			</div>
+		</section>	
+		<section class="content">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Category</th>
+						<th>Name</th>
+						<th>Date&Time</th>
+						<th>Amount</th>
+						<th>Options</th>
+						<!--<th>TotalAmount</th>-->
+					</tr>
+				</thead>
+				<tbody id="expenseTable">
+					<tr>
+						<td colspan="5">No expense items yet! Please add one up top...</td>
+					</tr>
+				</tbody>
+			</table>
+			<td>
+				<tr>
+					<br>
+					<hr>
+					TotalAmount: <b>Rs.</b>
+					<div id="totalAmount"></div>
+				</tr>
+			</td>
+		</section>
+
+		<script src="expense.js"></script>
+	</body>
+</html>
